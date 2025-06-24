@@ -1,6 +1,6 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-# 🎹 Auto Keyboard Presser and Mouse Clicker v4.0
+# 🎹 Auto Keyboard Presser
 
 **Aplicație pentru înregistrarea și redarea automată a acțiunilor de tastatură și mouse**
 
@@ -8,13 +8,13 @@
 
 ### Pentru Utilizatori Normali (Recomandat)
 1. **Mergi la Releases**
-2. **Descarcă** `KeyMouseRecorderV4.exe`
+2. **Descarcă** `KeyMouseRecorder.exe`
 3. **Dublu-click** pe executabil
 4. **Gata!** Nu trebuie să instalezi nimic altceva!
 
 ### Pentru Developeri
-git clone https://github.com/cosmin-panescu/Auto-Keyboard-Presser-and-Mouse-Clicker.git
-cd Auto-Keyboard-Presser-and-Mouse-Clicker
+git clone https://github.com/cosmin-panescu/Auto-Keyboard-Presser.git
+cd Auto-Keyboard-Presser
 pip install -r requirements.txt
 python key_recorder_gui.py
 
@@ -25,12 +25,6 @@ python key_recorder_gui.py
 - **Combinații complexe:** CTRL+C, SHIFT+F12, ALT+TAB, CTRL+ALT+DELETE
 - **Taste speciale:** Print Screen, Scroll Lock, Pause, Apps/Menu
 - **Modificatori:** Support complet pentru Left/Right Shift, Ctrl, Alt, Win
-
-### 🖱️ Detectare 100% Automată Mouse
-- **Click-uri automate:** Stânga, dreapta, middle - detectate natural
-- **Mișcare precisă:** Coordonate exacte cu precizie la pixel
-- **Scroll detection:** Up/down automat cu intensitate variabilă
-- **Fără hotkeys:** Totul se detectează automat în timp real!
 
 ### ⚡ Funcționalități Avansate
 - **Repetări flexibile:** De la 1 până la infinit
@@ -44,7 +38,6 @@ python key_recorder_gui.py
 ### Pașii de Bază
 1. **Lansează aplicația** - dublu-click pe executabil
 2. **Configurează opțiunile:**
-   - ✅ Bifează "Înregistrează mouse-ul" pentru acțiuni complete
    - Setează numărul de repetări (gol = infinit)
 3. **Începe înregistrarea** - apasă "🔴 Începe Înregistrarea"
 4. **Așteaptă countdown-ul** de 5 secunde pentru poziționare
@@ -67,10 +60,10 @@ python key_recorder_gui.py
 
 ## 🎯 Cazuri de Utilizare Perfecte
 
-### 🏢 Automatizarea Sarcinilor de Birou
-### 🎮 Gaming și Macros
-### 🧪 Testing și QA
-### 📹 Demonstrații și Tutoriale
+- 🏢 Automatizarea Sarcinilor de Birou
+- 🎮 Gaming și Macros
+- 🧪 Testing și QA
+- 📹 Demonstrații și Tutoriale
 
 ## ⚙️ Specificații Tehnice
 
@@ -91,15 +84,14 @@ python key_recorder_gui.py
 - **Tkinter** - GUI framework
 - **PyAutoGUI** - Cross-platform automation
 - **Keyboard** - Global keyboard hooks
-- **Pynput** - Advanced mouse detection
 - **PyInstaller** - Executable packaging
 
 ## 🛠️ Pentru Developeri
 
 ### Setup Environment
 -> Clone repository
--> git clone https://github.com/cosmin-panescu/Auto-Keyboard-Presser-and-Mouse-Clicker.git
--> cd Auto-Keyboard-Presser-and-Mouse-Clicker
+-> git clone https://github.com/cosmin-panescu/Auto-Keyboard-Presser.git
+-> cd Auto-Keyboard-Presser
 
 Install dependencies
 -> pip install -r requirements.txt
@@ -107,7 +99,6 @@ Install dependencies
 ### Dependențe
 pyautogui==0.9.54 # GUI automation
 keyboard==0.13.5 # Global keyboard hooks
-pynput==1.7.6 # Advanced input detection
 pyinstaller>=6.10.0 # Executable building
 
 ### Build Executabil
@@ -117,9 +108,6 @@ pyinstaller --onefile --windowed --name=KeyMouseRecorder key_recorder_gui.py
 ## 🔧 Troubleshooting
 
 ### Probleme Comune
-
-**Q: Aplicația nu detectează mouse-ul**
-A: Asigură-te că opțiunea "Înregistrează mouse-ul" este bifată și că nu rulezi aplicația ca Administrator (poate bloca hook-urile).
 
 **Q: CTRL+SHIFT+X nu oprește înregistrarea**
 A: Verifică că nu ai alte aplicații care interceptează aceste combinații de taste (ex: software gaming, macro tools).
