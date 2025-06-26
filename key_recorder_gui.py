@@ -9,7 +9,7 @@ from datetime import datetime
 class KeyRecorderGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎹 Advanced Key Recorder v4.0")
+        self.root.title("🎹 Advanced Key Recorder")
         self.root.geometry("900x800")
         self.root.configure(bg='#2c3e50')
         
