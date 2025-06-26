@@ -82,7 +82,7 @@ class KeyRecorderGUI:
         header_frame.pack(fill='x', padx=10, pady=(10, 5))
         header_frame.pack_propagate(False)
         
-        title_label = tk.Label(header_frame, text="🎹 Advanced Key Recorder v4.0", 
+        title_label = tk.Label(header_frame, text="🎹 Advanced Key Recorder", 
                               font=('Arial', 18, 'bold'), fg='white', bg='#34495e')
         title_label.pack(pady=20)
         
